@@ -1,0 +1,61 @@
+/* tailwind-custom.css: Loads Tailwind CSS and applies custom theme colors */
+@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
+
+:root {
+  --color-primary: #6366f1; /* Indigo-500 */
+  --color-secondary: #818cf8; /* Indigo-400 */
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
+  --color-bg-main: #18192a;
+  --color-bg-card: #23244d;
+  --color-bg-sidebar: #1a1b2e;
+  --color-bg-header: #23244d;
+  --color-text-main: #e5e7eb;
+  --color-text-muted: #a1a1aa;
+  --color-border: #2d2e4a;
+}
+
+body, .bg-gray-50 {
+  background-color: var(--color-bg-main) !important;
+  color: var(--color-text-main) !important;
+}
+
+.bg-card, .bg-white {
+  background-color: var(--color-bg-card) !important;
+  color: var(--color-text-main) !important;
+}
+
+.bg-sidebar {
+  background-color: var(--color-bg-sidebar) !important;
+}
+
+.bg-header {
+  background-color: var(--color-bg-header) !important;
+}
+
+.text-primary {
+  color: var(--color-primary) !important;
+}
+.text-muted, .text-gray-600, .text-gray-500 {
+  color: var(--color-text-muted) !important;
+}
+
+.border, .border-gray-200 {
+  border-color: var(--color-border) !important;
+}
+
+/* Button and card hover states */
+.hover\:bg-gray-100:hover, .hover\:bg-gray-50:hover {
+  background-color: #23244d !important;
+}
+
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+  background: var(--color-bg-sidebar);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+} 
